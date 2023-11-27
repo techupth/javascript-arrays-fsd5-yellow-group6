@@ -46,3 +46,23 @@ let isArray;
 let creditCardTypeOfBlindermann;
 let totalPurchaseOfJoannet;
 let totalPurchaseOfDary;
+
+isArray = Array.isArray(orders)
+console.log(isArray)
+
+creditCardTypeOfBlindermann = orders[2].creditCardType
+console.log(creditCardTypeOfBlindermann)
+
+orders[2].creditCardType = "visa"
+console.log(orders[2].creditCardType)
+
+totalPurchaseOfJoannet = orders[3].productQuantity
+console.log(totalPurchaseOfJoannet)
+
+totalPurchaseOfDary = orders[1].productQuantity * orders[1].productPrice
+console.log(totalPurchaseOfDary)
+
+orders.shift()
+console.log(orders)
+
+
